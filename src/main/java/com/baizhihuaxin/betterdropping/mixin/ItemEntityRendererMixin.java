@@ -39,7 +39,7 @@ public abstract class ItemEntityRendererMixin extends EntityRenderer<ItemEntity>
         matrixStack.push();
         ItemStack itemStack = itemEntity.getStack();
         this.random.setSeed(getSeed(itemStack));
-        BakedModel bakedModel = this.itemRenderer.getModel(itemStack, itemEntity.getWorld(), (LivingEntity)null, itemEntity.getId());
+        BakedModel bakedModel = this.itemRenderer.getModel(itemStack, itemEntity.getWorld(), null, itemEntity.getId());
         boolean bl = bakedModel.hasDepth();
         itemEntity.getItemAge();
         float k = bakedModel.getTransformation().getTransformation(ModelTransformationMode.GROUND).scale.y();
