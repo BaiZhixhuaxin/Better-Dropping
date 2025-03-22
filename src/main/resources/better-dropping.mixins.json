@@ -1,11 +1,16 @@
 {
-	"required": true,
-	"package": "com.baizhihuaxin.betterdropping.mixin",
-	"compatibilityLevel": "JAVA_21",
-	"mixins": [
-		"ExampleMixin"
-	],
-	"injectors": {
-		"defaultRequire": 1
-	}
+  "required": true,
+  "package": "com.baizhihuaxin.betterdropping.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "mixins": [
+    "ExampleMixin",
+    "ItemEntityMixin",
+    "PlayerTickMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "client": [
+    "ItemEntityRendererMixin"
+  ]
 }

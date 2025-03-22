@@ -5,7 +5,7 @@
 	"name": "Better Dropping",
 	"description": "This is an example description! Tell everyone what your mod is about!",
 	"authors": [
-		"Me!"
+		"BaiZhihuaxin"
 	],
 	"contact": {
 		"homepage": "https://fabricmc.net/",
@@ -20,6 +20,9 @@
 		],
 		"fabric-datagen": [
 			"com.baizhihuaxin.betterdropping.BetterDroppingDataGenerator"
+		],
+		"client": [
+			"com.baizhihuaxin.betterdropping.BetterDroppingClient"
 		]
 	},
 	"mixins": [
