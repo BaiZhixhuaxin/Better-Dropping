@@ -40,7 +40,7 @@ public abstract class PlayerTickMixin extends LivingEntity {
                         HitResult hit = client.crosshairTarget;
                         if (hit != null) {
                             if (hit.getType().equals(HitResult.Type.BLOCK)) {
-                                Vec3d vec3d = hit.getPos().offset(((BlockHitResult)hit).getSide(),0.5);
+                                Vec3d vec3d = hit.getPos().offset(((BlockHitResult)hit).getSide(),1);
                                 List<ItemEntity> entityList = world.getEntitiesByClass(ItemEntity.class, new Box(vec3d.x - 0.8, vec3d.y - 0.8, vec3d.z - 0.8, vec3d.x + 0.8, vec3d.y + 0.8, vec3d.z + 0.8), e -> e instanceof ItemEntity);
                                 if (entityList.toArray().length > 0) {
                                     ItemEntity entity1 = entityList.getFirst();
